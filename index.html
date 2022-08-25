@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Rolling-Code</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body id="cuerpoPagina">
+    <div class="titulo">
+        <h1>EJERCICIOS ROLLING-CODE 08/22 - PARTE 1</h1>
+        <button type="button" id="botonDark" onclick="darkMode()">Modo Oscuro</button>
+    </div>
+    <div class="box" id="eje1">
+        <h2>Ejercicio número 1</h2>
+        <p>
+            Escribe un programa de una sola línea que haga que aparezca en la pantalla un
+            alert que diga “un mensaje”
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="activarAlert()">Activar ALERT</button>
+    </div>
+    <div class="box" id="eje2">
+        <h2>Ejercicio nùmero 2</h2>
+        <p>
+            Escribe un programa de una sola línea que escriba en la pantalla un texto que
+            diga «Hello World» (document.write).
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="imprimirMensaje()">Activar Mensaje</button>
+    </div>
+    <div class="box" id="eje3">
+        <h2>Ejercicio nùmero 3</h2>
+        <p>
+            Escribe un programa de una sola línea que escriba en la pantalla el resultado
+            de sumar 3 + 5.
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="sumarTresyCinco()">Sumar 3 + 5</button>
+    </div>
+    <div class="box" id="eje4">
+        <h2>Ejercicio nùmero 4</h2>
+        <p>
+            Escribe un programa de dos líneas que pida el nombre del usuario con un
+            prompt y escriba un texto que diga «Hola nombreUsuario».
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="pedirNombre()">Activar Ejercicio 4</button>
+    </div>
+    <div class="box" id="eje5">
+        <h2>Ejercicio nùmero 5</h2>
+        <p>
+            Escribe un programa de tres líneas que pida un número, pida otro número y
+            escriba el resultado de sumar estos dos números.
+        </p>
+        <p>
+            Nota: Tener en cuenta la siguiente función: parseInt.
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt"
+                target="_blank">Developer Mozilla "parseInt"</a>
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="sumarNumeros()">Activar Ejercicio 5</button>
+    </div>
+    <div class="box" id="eje6">
+        <h2>Ejercicio nùmero 6</h2>
+        <p>
+            Escribe un programa que pida dos números y escriba en la pantalla cual es el
+            mayor.
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="comparar()">Activar Ejercicio 6</button>
+    </div>
+    <div class="box" id="eje7">
+        <h2>Ejercicio nùmero 7</h2>
+        <p>
+            Escribe un programa que pida 3 números y escriba en la pantalla el mayor de
+            los tres.
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="compararTres()">Activar Ejercicio 7</button>
+        <p id="mayorNumeroIngresado"></p>
+    </div>
+    <div class="box" id="eje8">
+        <h2>Ejercicio nùmero 8</h2>
+        <p>
+            Escribe un programa que pida un número y diga si es divisible por 2.
+        </p>
+        <p>DIFICULTAD: ⚫</p>
+        <button type="button" onclick="divisibleEnDos()">Activar Ejercicio 8</button>
+    </div>
+    <div class="box" id="eje9">
+        <h2>Ejercicio nùmero 9</h2>
+        <p>
+            Escribe un programa que pida una frase y escriba las vocales que aparecen.
+        </p>
+        <p>
+            Nota: Tener en cuenta la función length y substring o
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">charAt (developer mozilla).
+            </a>
+        </p>
+        <p>DIFICULTAD: ⚫🔴</p>
+        <button type="button" onclick="buscarVocales()">Activar Ejercicio 9</button>
+        <p id="vocalesContenidas"></p>
+    </div>
+    <div class="box" id="eje10">
+        <h2>Ejercicio nùmero 10</h2>
+        <p>
+            Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si
+            lo es por uno de los cuatro).
+        </p>
+        <p>DIFICULTAD: ⚫🔴</p>
+        <label>
+            Escribir un número: <input type="text" id="diez" name="diez" />
+        </label>
+        <button type="button" onclick="numerosDivisibles()" accesskey="s">Enviar</button>
+        <p id="mensajeDivisible"></p>
+    </div>
+    <div class="box">
+        <h2>Ejercicio nùmero 11</h2>
+        <p>
+            Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay
+            que decir todos por los que es divisible).
+        </p>
+        <p>DIFICULTAD: ⚫🔴</p>
+        <label>
+            Escribir un número: <input type="text" id="once" name="once" />
+        </label>
+        <button type="button" onclick="numerosDivisiblesParteDos()" accesskey="s">Enviar</button>
+        <p id="mensajeDivisibleParteDos"></p>
+    </div>
+
+    <script src="./JS/ejercicios.js"></script>
+</body>
+
+</html>

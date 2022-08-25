@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Taviraj:wght@200&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Modo Oscuro */
+
+.dark{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.titulo .botonNegro{
+    background-color: white;
+    color: black;
+}
+
+/*  */
+
+.titulo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo button{
+    padding: 5px 25px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid thin;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.box button{
+    width: 25%;
+    cursor: pointer;
+    margin: 5px 30px;
+    background-color: rgba(232, 238, 144, 0.5);
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.box #diez,#once {
+    height: 25px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.box a{
+    text-decoration: none;
+    color: red;
+}
